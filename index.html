@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN SICEFA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Softind">
+    <meta name="description" content="login ">
+    <meta name="keywords" content="login ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        
+        body {
+            background-image: url(img/farma.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .bg {
+            background-image: url(img/logoF.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+        
+    .btn-purple {
+        color: #fff;
+        background-color: #800080; 
+        border-color: #800080; 
+    }
+
+    .btn-purple.btn-sm {
+        font-size: 0.875rem; 
+    }
+    </style>
+</head>
+    
+<body>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"></div>
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-end">
+                    <img src="img/logo.jpeg" width="50" alt="">
+                </div>
+                <h2 class="fw-bold text-center py-5">Bienvenido al sistema de inicio de sesión de SICEFA </h2>
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Nombre de usuario</label>
+                        <input type="email" class="form-control" name="email">  
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password">  
+                    </div>
+                </form>
+                <div class="d-flex justify-content-between">
+                    <!-- Botón de Iniciar Sesión -->
+                    <button type="submit" class="btn btn-danger" onclick="validate();">Iniciar Sesión en SICEFA Central</button>
+                    <!-- Botón de Iniciar Sesión en CISEFA Sucursal -->
+                    <button type="submit" class="btn btn-success btn-sm" onclick="validate2();">Iniciar Sesión en SICEFA Sucursal</button>
+                </div>
+                <br>
+                <div class="d-flex justify-content-between">
+                    <a href="info.html" class="btn btn-purple">Información de la empresa</a>
+                </div>
+            </div>           
+        </div>
+    </div> 
+    <script src="JS/login.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
